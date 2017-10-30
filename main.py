@@ -31,7 +31,7 @@ def remains_gone():
     return True
 
 
-was_present = False
+was_present = True
 while True:
     sleep(1)
     if not bridge.get_light(3, 'on'):  # do nothing if the lights are already on
