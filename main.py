@@ -31,7 +31,7 @@ def remains_gone():
     return True
 
 
-was_present = False
+was_present = True
 while True:
     sleep(1)
     print('running lights script')
