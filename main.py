@@ -34,6 +34,7 @@ def remains_gone():
 was_present = False
 while True:
     sleep(1)
+    print('running lights script')
     if not bridge.get_light(3, 'on'):  # do nothing if the lights are already on
         if phone_present():
             if was_present:  # if the phone was already present, do not turn the lights on.
@@ -42,4 +43,4 @@ while True:
                 was_present = True  # mark the phone as present
                 activate_lights()  # turn on the appropriate light scheme
         elif remains_gone():  # timeout after wait_time, if the phone remains gone,
-            was_present = False  # start listenin for the phone again
+            was_present = False  # start listening for the phone again
