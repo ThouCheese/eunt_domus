@@ -40,7 +40,7 @@ def remains_gone():
     return True
 
 
-was_present = True
+was_present = False
 while True:
     sleep(1)
     # do nothing if the lights are already on
